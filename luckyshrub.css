@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #e2e2e2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Logo ~ Header Section */
+header {
+    background-color: #042a2b;
+}
+
+header > img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+
+/* Menu ~ Nav Section */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #042a2b;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0rem 2rem 0rem 2rem;
+    color: #96c1bd;
+    font-size: 17px;
+}
+
+nav li:hover {
+    color: #799b97;
+    cursor: pointer;
+}
+
+nav a {
+    color: #96c1bd;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #799b97;
+}
+
+
+/* Main Body */
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+
+/* Top Article ~ Promotion */
+.promotion {
+    background-image: url(tomato.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 3rem;
+    border-radius: 1rem;
+    height: 20rem;
+    opacity: 95%;
+}
+
+.promotion > h1 {
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 4rem;
+    opacity: 95%;
+}
+
+.promotion > p {
+    flex-direction: row;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 15rem;
+    margin-right: 2rem;
+    color: whitesmoke;
+    text-align: left;
+}
+
+/* Responsive design for top row */
+@media screen and (max-width: 1200px) {
+    .promotion {
+        background-image: url(tomato.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 3rem;
+        border-radius: 1rem;
+        height: auto;
+        opacity: 95%;
+    }
+
+    .promotion > p {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Bottom Row Article ~ 3 Flex Articles */
+.bottom_row > article {
+    background-color: #173408;
+    border-radius: 15px;
+}
+
+.bottom_row img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.bottom_row h1 {
+    color: whitesmoke;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+.bottom_row h3 {
+    color: #d6d4d4;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 2rem 0rem 2rem;
+}
+
+.bottom_row p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin: 0 2rem 2rem 2rem;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.first_article {
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+}
+
+.last_article {
+    margin-right: 3rem;
+    margin-left: 1.5rem;
+}
+
+button {
+    margin: 0 auto 2rem auto;
+    height: 2rem;
+    width: 6.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    border-radius: 15px;
+    background-color: #799b97;
+    color: whitesmoke;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #d6d4d4;
+    color: #173408;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+    .bottom_row {
+        flex-wrap: wrap;
+        margin: 0rem;
+    }
+
+    .bottom_row > article {
+        padding: 0;
+        margin: 3rem;
+    }
+}
+
+
+/* Footer */
+footer {
+    padding: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    background-color: #141414;
+}
+
+div {
+    flex: 1;
+}
+
+div > img {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+div > p {
+    color: whitesmoke;
+    text-align: center;
+}
