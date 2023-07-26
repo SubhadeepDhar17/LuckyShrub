@@ -153,6 +153,13 @@ article {
     margin-right: 1.5rem;
 }
 
+.bottom_row > article:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    border: 0px solid white;
+}
+
 .last_article {
     margin-right: 3rem;
     margin-left: 1.5rem;
@@ -170,6 +177,7 @@ button {
     color: whitesmoke;
     cursor: pointer;
     border: none;
+
 }
 
 button:hover {
